@@ -10,6 +10,6 @@ h2.fw-bold.primary-text {
     color: var(--primary-clr);
 }   
 
-.add-plan.d-flex.p-3.mt-2.bg-body {
+.add-plan {
     background-color: var(--light-card-clr) !important;
 }
