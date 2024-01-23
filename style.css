@@ -1,0 +1,15 @@
+.coupon-btn.border.px-3.py-3.rounded {
+    border-color: var(--primary-clr) !important;
+}
+
+button.secondary-text {
+    color: var(--primary-clr) !important;
+}
+
+h2.fw-bold.primary-text {
+    color: var(--primary-clr);
+}   
+
+.add-plan.d-flex.p-3.mt-2.bg-body {
+    background-color: var(--light-card-clr) !important;
+}
