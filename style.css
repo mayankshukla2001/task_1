@@ -13,3 +13,10 @@ h2.fw-bold.primary-text {
 .add-plan {
     background-color: var(--light-card-clr) !important;
 }
+.member-ship-img{
+    width: 35%;
+}
+
+.total-class{
+    background-color: #DCE5E6;
+}
