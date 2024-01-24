@@ -13,7 +13,7 @@ let veh =document.getElementsByClassName("lower-part-hidden")
 const userdata={
 }
 function subuser(){
-    alert("its working subuser()")
+    alert("its submiting...")
     userdata.name=(document.querySelector("#pt-Name").value);
     userdata.mnumber=document.querySelector("#mnumber").value;
     userdata.dob=document.querySelector("#dob").value;
