@@ -20,3 +20,124 @@ h2.fw-bold.primary-text {
 .total-class{
     background-color: #DCE5E6;
 }
+/* below given by @bhi */
+.col-7{
+    background: #FFF;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.17);
+    height: 100vh;
+    overflow: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.lower-part{
+    display: grid;
+    justify-items: center;
+}
+.time-line{
+    padding: 2%;
+    align-items: center;
+}
+.time-line>h6{
+    width: 100%;
+}
+.dot{
+    height:10px;
+    width: 10px;
+    padding: 2px;
+    border:2px solid #DCE5E6;
+    border-radius: 50%;
+    background-color: #444242;
+}
+.hdin{
+    margin:4% 5% 2% 5%;
+}
+.add-pt{
+    width: fit-content;
+    border-radius: 5px;
+    border: 1px solid var(--P-300, #C5354E);
+    color: #C5354E;
+    padding: 1.5% 25%;
+    margin: 0 15%;
+}
+hr{
+    margin: 0;
+    padding: 0 2%;
+}
+/* below for the input box when add pt clicked */
+.lower-part-hidden{
+    background: #FBFBFB;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    margin:3% 5%;
+    padding:3% 4%;
+}
+.mod2{
+    display: grid;
+    padding: 4% 5%;
+}
+.mod2>input,select{
+    margin: 2% 0;
+    padding: 2%;
+    background-color: #EFEFEF;
+    border-style: none;
+}
+
+.types>div{
+    width: auto;
+    display: inline-block;
+    border: 1px solid #6B788E;
+    padding: 1% 5%;
+    margin:2%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgb(222, 222, 222);
+}
+.types>div:hover{
+    background-color: #169D88;
+    color: #fff;
+}
+.contbtn{
+    justify-content: flex-end;
+    margin: 4% 0;
+}
+.btn-mod1{
+    border: 2px solid #FF2B2B;
+    color: #FF2B2B;
+    width: fit-content;
+    padding: 1% 5%;
+    margin-right: 2%;
+    border-radius: 7px;
+}
+.btn-mod2{
+    border: 2px solid #FF2B2B;
+    color: #FF2B2B;
+    width: fit-content;
+    padding: 1% 5%;
+    margin-right: 2%;
+    border-radius: 7px;
+}
+.btn-mod2:hover,.btn-mod2:active,.btn-mod1:hover,.btn-mod1:active{
+    color: #fff;
+    border: 2px solid #169D88;
+    background:  #169D88;
+}
+.user-data{
+    display: flex;
+}
+.user-data>.d-flex>*{
+    margin: 10px;
+}
+.user-data>.d-flex>input{
+    height: min-content;
+}
+.btn-final{
+    background-color: #E7ACB6;
+    color: #fff;
+    width: fit-content;
+    padding: 2% 10%;
+    margin: 2% 26%;
+    border-radius: 5px;
+}
+.btn-final:hover,.btn-final:active{
+    background-color:#C5354E;
+}
+/* above given by @bhi */
