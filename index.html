@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-7">
+            <div class="col-7 first-cont">
                 <div class="time-line d-flex">
                     <input type="radio" class="dot"></input>
                     <h6 class="secondary-text">Add Patient Details</h6>
@@ -31,12 +31,13 @@
                     <h6 class="secondary-text">Select Time Slot</h6>
                 </div>
                 <hr style="width: 100%;">
-                <h1 class="heading hdin">Patient Details</h1>
-                <h2 class="heading hdin">Step 1: Select Patient</h2>
+                <h1 class="heading hdin hdin1">Patient Details</h1>
+                <h2 class="heading hdin hdin2">Step 1: Select Patient</h2>
                 
                 <div class="lower-part" id="lpv">
-                <button onclick="sub()" class="secondary-text add-pt">+ Add Patien</button>
-                <svg width="436" height="277" viewBox="0 0 436 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button onclick="sub()" class="secondary-text add-pt" id="">+ Add Patient</button>
+                <span id="svg-bg">
+                <svg width="100%" height="auto" viewBox="0 0 436 277" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M369.169 214.599L397.881 276.662L401.114 276.653L376.29 210.571L369.169 214.599Z" fill="#DCA86E"/>
                     <path d="M339.47 215.929L310.759 276.664L307.518 276.655L332.349 214.549L339.47 215.929Z" fill="#DCA86E"/>
                     <path d="M266.512 263.364L251.921 276.139L234.717 264.028C234.717 264.028 240.571 262.062 250.61 264.736L260.886 256.104L266.512 263.364Z" fill="url(#paint0_linear_1888_8344)"/>
@@ -131,6 +132,7 @@
                     </linearGradient>
                     </defs>
                     </svg>
+                </span>
                  </div>   
                  <!-- the lower portion is hidden step-2 -->
                  <div class="lower-part-hidden" id="lph" style="display:none">
@@ -166,6 +168,7 @@
                     <input type="checkbox" name="" id="checkedpt">
                     <div>
                         <h2 id="test-user" class="title">test user</h2>
+                        <h3 id="test-numb">test mNum</h3>
                         <h3 id="test-gender" class="secondary-text">male testin...</h3>
                         <h3 id="test-dob" class="secondary-text">test dob</h3>
                     </div>
@@ -186,7 +189,7 @@
                  </div>
                  <button onclick="sub()" class="secondary-text add-pt">+ Add Patien</button>
                 </div>
-                <button style="display:none;" id="btn-final" class="btn-final primary-text">Save and Countinue</button>
+                <button onclick="step2()" style="display:none;" id="btn-final" class="btn-final primary-text">Save and Countinue</button>
             </div>
 
 
