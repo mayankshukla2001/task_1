@@ -202,11 +202,21 @@ h2.primary-text {
     font-size: large !important;
 }
 
+
+.hide-add-plan-popup{
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all 1s;
+}
+
 @media all and (max-width: 334px) {
     .card-plan-popup .modal-content {
         width: 75% !important;
+    }
     .all-button{
         flex-direction: column;
     }
-  }
 }
