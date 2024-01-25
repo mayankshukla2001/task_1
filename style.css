@@ -142,3 +142,71 @@ h2.fw-bold.primary-text {
     margin-top: 12% 10% 0 10%;
 }
 /* above given by @bhi */
+
+
+.card-plan-popup .modal-dialog {
+    margin: 0 !important;
+    margin-left: auto !important;
+}
+.card-plan-popup .modal-content {
+    width: 55vh !important;
+    height: 80vh !important;
+    margin-left: auto ;
+    transition: transform 280ms ease-in-out;
+
+    transform: translate(100%,0%);
+}
+.card-plan-popup.show .modal-content{
+    transform: translate(0);
+}
+.container.d-flex.flex-column.justify-content-center {
+    margin-top: 50%;
+}
+.modal-content .modal-header{
+    display: block !important;
+}
+h2.primary-text {
+    /* font-weight: 600 !important; */
+}
+.discount-sec-on-booking{
+    color: var(--secondary-clr) !important;
+}
+.payment-handle{
+    background-color: var(--light-card-clr) !important;
+    border-radius: 3px;
+}
+.plan-sec{
+    font-weight: 600;
+    font-size: 12px;
+}
+.month-6-plan{
+    background-color: var(--white-clr) !important;
+    border-radius: 5px;
+}
+.month-1-plan{
+    background-color: var(--white-clr) !important;
+    border-radius: 5px;
+}
+.activeplan{
+    background: linear-gradient(278deg, #224888 0%, #C5354F 100%);
+}
+
+.activeplan span, .activeplan p{
+    color: white;
+}
+.plan-intro-img{
+    height: 10%;
+}
+
+.btn-size{
+    font-size: large !important;
+}
+
+@media all and (max-width: 334px) {
+    .card-plan-popup .modal-content {
+        width: 75% !important;
+    .all-button{
+        flex-direction: column;
+    }
+  }
+}
