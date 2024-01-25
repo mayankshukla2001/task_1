@@ -39,9 +39,7 @@ function step2(){
 
     document.querySelector(".hdin1").innerHTML="Address Details";
     document.querySelector(".hdin2").innerHTML="Step 2: Select Address";
-    document.querySelector(".add-pt").innerHTML="+ Add Address"
-    document.querySelector(".add-pt").id="adda-ddr"
-    document.querySelector("#svg-bg").innerHTML=`<svg width="100%" height="auto" viewBox="0 0 366 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+    document.querySelector("#svg-bg").innerHTML=`<svg width="366" height="260" viewBox="0 0 366 260" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M154.211 257.562C153.627 250.889 156.936 244.011 162.508 240.299C168.088 236.587 175.702 236.185 181.638 239.297C183.08 235.441 184.553 231.516 187.111 228.29C189.669 225.064 193.518 222.589 197.632 222.741V257.562H154.211Z" fill="#EBEBEB"/>
     <path d="M39.8915 122.838L17.7026 167.588L24.3296 167.838L5.52636 203.403H15.4024L0 234.997H86.0912L67.1361 203.403L76.2227 203.008L58.0571 167.459L64.7677 167.064L39.8915 122.838Z" fill="#EBEBEB"/>
     <path d="M43.6438 174.747C43.7501 174.747 43.5603 193.702 43.2187 217.075C42.8771 240.456 42.5128 259.404 42.3989 259.396C42.2926 259.396 42.4824 240.448 42.824 217.068C43.1656 193.695 43.53 174.747 43.6438 174.747Z" fill="#E0E0E0"/>
@@ -126,5 +124,53 @@ function step2(){
     </svg>
     `
 
+    document.querySelector(".add-pt").style.display='none';
+    document.querySelector("#add-addr").style.display="";
 }
 
+function addressbt(){
+    document.querySelector("#takeadd").style.display='';
+    document.querySelector('#svg-bg').style.display='none';
+    document.querySelector('#add-addr').style.display='none';
+    
+}   
+function addaddress(){
+    alert("its submiting address...")
+    userdata.homeNName=(document.querySelector("#home-Name").value);
+    userdata.mnumber=document.querySelector("#mnumber").value;
+    userdata.pincode=document.querySelector("#pincode").value;
+    userdata.landmark=document.querySelector("#landm").value;
+    userdata.city=document.querySelector("#city").value;
+    userdata.state=document.querySelector("#state").value;
+    
+
+    document.querySelector("#lp3").style.display='';
+    document.querySelector("#takeadd").style.display="none";
+    document.querySelector("#btn-final").style.display=''
+
+   
+
+    
+    let dv=document.createElement('h2')
+    dv.innerText=userdata.homeNName
+    document.querySelector('.test-text').appendChild(dv)
+
+    let dv1=document.createElement('h2')
+    dv1.innerText=userdata.pincode
+    document.querySelector('.test-text').appendChild(dv1)
+
+    let dv2=document.createElement('h2')
+    dv2.innerText=userdata.landmark
+    document.querySelector('.test-text').appendChild(dv2)
+
+    let dv3=document.createElement('h2')
+    dv3.innerText=userdata.city
+    document.querySelector('.test-text').appendChild(dv3)
+
+    let dv4=document.createElement('h2')
+    dv4.innerText=userdata.state
+    document.querySelector('.test-text').appendChild(dv4)
+
+
+   
+}
