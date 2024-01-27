@@ -78,7 +78,7 @@ h2.fw-bold.primary-text {
     overflow-x: scroll;
     padding: 0;
 }
-.types>div{
+.types>input{
     width: auto;
     border: 1px solid #6B788E;
     padding: 1% 5%;
@@ -86,7 +86,7 @@ h2.fw-bold.primary-text {
     border-radius: 2px;
     box-shadow: 2px 2px 2px 2px rgb(222, 222, 222);
 }
-.types>div:hover{
+.types>input:hover{
     background-color: #169D88;
     color: #fff;
 }

@@ -12,13 +12,8 @@ function cancel(){
 
 const userdata={
 }
-
-// function typ(){
-//     document.querySelector(".types").this.ac.children
-//     console.log("it is clicked")
-//   }
-
-
+function settes(v){
+    userdata.onbehalf=v}
 function subuser(){
     alert("its submiting...")
     userdata.name=(document.querySelector("#pt-Name").value);
@@ -32,8 +27,11 @@ function subuser(){
 
     userdata.gender=document.querySelector("#gender").value;
     if(userdata.gender=='Select Gender'){alert("Pleaase Select Gender"); return false}
+
+ 
     
-    
+    // userdata.onbehalf=this.document.querySelector("#typept").value
+    // if(userdata.onbehalf==''){alert("Select type of patient")}
   
 
     document.querySelector("#formfill").style.display="none";
@@ -50,6 +48,7 @@ function subuser(){
            <h3 id="test-numb">${userdata.mnumber}</h3>
            <h3 id="test-gender" class="secondary-text">${userdata.gender}</h3>
            <h3 id="test-dob" class="secondary-text">${userdata.dob}</h3>
+           <h3 id="test-dob" class="secondary-text">${userdata.onbehalf}</h3>
        </div>
        </span>
        <span class="d-flex justify-content-around">
