@@ -74,9 +74,12 @@ h2.fw-bold.primary-text {
     border-style: none;
 }
 
+.types{
+    overflow-x: scroll;
+    padding: 0;
+}
 .types>div{
     width: auto;
-    display: inline-block;
     border: 1px solid #6B788E;
     padding: 1% 5%;
     margin:2%;

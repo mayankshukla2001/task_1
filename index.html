@@ -34,8 +34,8 @@
                 <h1 class="heading hdin hdin1">Patient Details</h1>
                 <h2 class="heading hdin hdin2">Step 1: Select Patient</h2>
 
-                <div class="lower-part" id="lpv">
-                    <button onclick="sub()" class="secondary-text add-pt" id="">+ Add Patient</button>
+                <div class="lower-part" id="step1box">
+                    <button onclick="sub()" class="secondary-text add-pt" id="first-user">+ Add Patient</button>
                     <span id="svg-bg">
                         <svg width="100%" height="auto" viewBox="0 0 436 277" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -239,7 +239,7 @@
                     </span>
                 </div>
                 <!-- the lower portion is hidden step-2 -->
-                <div class="lower-part-hidden" id="lph" style="display:none">
+                <div class="lower-part-hidden" id="formfill" style="display:none">
                     <div class="modal-body mod2">
                         <div class="primary-text">Enter Patient Details</div>
                         <input class="secondary-text" type="text" name="pt-Name" id="pt-Name" placeholder="Name*">
@@ -252,59 +252,38 @@
                             <option value="male">Male</option>
                             <option value="female">FeMale</option>
                         </select>
-                        <div class="secondary-text types m-4">
-                            <div>Self</div>
-                            <div>Spouse</div>
-                            <div>Sister</div>
-                            <div>Brother</div>
-                            <div>Son</div>
-                            <div>Daughter</div>
+                        <div id="types" class="secondary-text d-flex justify-content-between types mt-4">
+                            <div id="typeof1" value="self" name="typeofpt">Self</div>
+                            <div id="typeof2" value="Spouse" name="typeofpt">Spouse</div>
+                            <div id="typeof3" value="Sister" name="typeofpt">Sister</div>
+                            <div id="typeof4" value="Brother" name="typeofpt">Brother</div>
+                            <div id="typeof5" value="Son" name="typeofpt">Son</div>
+                            <div id="typeof6" value="Daughter" name="typeofpt">Daughter</div>
                         </div>
                         <span class="d-flex contbtn">
                             <button onclick="cancel()" class="btn-mod1 primary-text">Cancel</button>
                             <button onclick="subuser()" class="btn-mod2 primary-text">Save</button>
                         </span>
                     </div>
-                </div>
-                <!-- below is for address details which will be visible on call -->
-                <div class="lower-part-hidden" id="takeadd" style="display:none">
-                    <div class="modal-body mod2">
-                        <div class="primary-text">Enter Address Details</div>
-                        <input class="secondary-text" type="text" name="home-Name" id="home-Name"
-                            placeholder="Flat number, Building name, Streets*">
-                        <input class="secondary-text" type="number" name="mnumber" id="mnumber"
-                            placeholder="Enter mobile number">
-                        <input class="secondary-text" type="number" name="pincode" id="pincode" placeholder="Pincode*">
-                        <input class="secondary-text" type="text" name="landm" id="landm" placeholder="Landmark*">
-
-                        <select class="secondary-text" name="city" id="city">
-                            <option>Select City</option>
-                            <option value="Lucknow">Lucknow</option>
-                            <option value="kanput">Kanpur</option>
-                        </select>
-                        <select class="secondary-text mt-3" name="state" id="state">
-                            <option>State</option>
-                            <option value="UP">UP</option>
-                            <option value="MP">MP</option>
-                        </select>
-
-                        <span class="d-flex contbtn">
-                            <button onclick="canceladress()" class="btn-mod1 primary-text">Cancel</button>
-                            <button onclick="addaddress()" class="btn-mod2 primary-text">Save</button>
-                        </span>
-                    </div>
-                </div>
+                 </div>
+                 <!-- the lower part is step 3 show user data -->
+                 <div id="ustext">
+                    <!-- this sub button is diffrent from step1box as it shows uder data above one form-fill -->
+                    <button style="display: none;" onclick="sub()" class="secondary-text add-pt" id="usersave">+ Add Patien</button>
+                 </div>
                 <!-- the lower part is step 3 show user data -->
-                <div id="ustext">
-                    <button onclick="sub()" class="secondary-text add-pt d-none" id="usersave"> Add Patien</button>
-                </div>
-                <!-- the lower part is step 3 show user data -->
+                 <!-- below is for address details which will be visible on call after user data is taken-->
+                 <div style="display: none;" class="lower-part-hidden" id="takeadd">
+                   
+                 </div>
+ <!-- below is for address details which will be visible on call after user data is taken-->
 
+               
                 <button onclick="step2()" style="display:none;" id="btn-final" class="btn-final primary-text">Save and
                     Countinue</button>
             </div>
 
-
+<!-- till here given by abhi -->
             <!-- Bootstrap JS (make sure to include it after Bootstrap CSS) -->
 
             <div class="col-5">
