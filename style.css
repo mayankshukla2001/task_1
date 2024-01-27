@@ -226,6 +226,15 @@ h2.fw-bold.primary-text {
     font-size: small !important;
 }
 
+.coupon-not-applied{
+    /* display:none; */
+    /* width: 100%; */
+}
+
+.cancel-cpn{
+    display: block;
+}
+
 @media all and (max-width: 334px) {
     .card-plan-popup .modal-content {
         width: 75% !important;

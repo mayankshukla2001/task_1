@@ -173,34 +173,3 @@ function dlt(){
     this.document.querySelector(".user-data").remove()
 }
 
-
-///////////////////////////////////////
-
-function afterClickAplyCpn() {
-    let cont=`
-    <div class="mx-3 d-flex">
-        <div class="d-flex w-100">
-            <div class="picture align-middle mt-3">
-                <img src="img/couponapplied.png" alt="" />
-            </div>
-            <div class="d-flex ms-3 w-100 justify-content-between">
-                <div class="name_amount">
-                    <p class="fw-bold primary-text">Coupon ‘MEDCAB LAB10’ applied</p>
-                    <h4 class="text-secondary small-text">
-                        Congratulations you have saved Rs 50.00
-                    </h4>
-                </div>
-                <div class="name_amount mt-3">
-                    <button type="button" class="">
-                        <img src="img/Close.png" alt="" />
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-`
-    console.log("it is workin")
-    let chn =document.querySelector("#apply-cpn1")
-    chn.innerHTML=''
-    chn.insertAdjacentHTML("beforeend",cont)
-}
