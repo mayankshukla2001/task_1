@@ -265,39 +265,41 @@
                             <button onclick="subuser()" class="btn-mod2 primary-text">Save</button>
                         </span>
                     </div>
-                 </div>
-                 <!-- below is for address details which will be visible on call -->
-                 <div class="lower-part-hidden" id="takeadd" style="display:none">
+                </div>
+                <!-- below is for address details which will be visible on call -->
+                <div class="lower-part-hidden" id="takeadd" style="display:none">
                     <div class="modal-body mod2">
                         <div class="primary-text">Enter Address Details</div>
-                        <input class="secondary-text" type="text" name="home-Name" id="home-Name" placeholder="Flat number, Building name, Streets*">
-                        <input class="secondary-text" type="number" name="mnumber" id="mnumber" placeholder="Enter mobile number">
+                        <input class="secondary-text" type="text" name="home-Name" id="home-Name"
+                            placeholder="Flat number, Building name, Streets*">
+                        <input class="secondary-text" type="number" name="mnumber" id="mnumber"
+                            placeholder="Enter mobile number">
                         <input class="secondary-text" type="number" name="pincode" id="pincode" placeholder="Pincode*">
                         <input class="secondary-text" type="text" name="landm" id="landm" placeholder="Landmark*">
-                         
-                        <select class="secondary-text"  name="city" id="city">
-                            <option >Select City</option>
+
+                        <select class="secondary-text" name="city" id="city">
+                            <option>Select City</option>
                             <option value="Lucknow">Lucknow</option>
                             <option value="kanput">Kanpur</option>
-                     </select>
-                     <select class="secondary-text mt-3"  name="state" id="state">
-                        <option >State</option>
-                        <option value="UP">UP</option>
-                        <option value="MP">MP</option>
-                 </select>
-                        
+                        </select>
+                        <select class="secondary-text mt-3" name="state" id="state">
+                            <option>State</option>
+                            <option value="UP">UP</option>
+                            <option value="MP">MP</option>
+                        </select>
+
                         <span class="d-flex contbtn">
-                        <button onclick="canceladress()" class="btn-mod1 primary-text">Cancel</button>
-                        <button onclick="addaddress()" class="btn-mod2 primary-text">Save</button>
-                    </span>
+                            <button onclick="canceladress()" class="btn-mod1 primary-text">Cancel</button>
+                            <button onclick="addaddress()" class="btn-mod2 primary-text">Save</button>
+                        </span>
                     </div>
-                 </div>
-                 <!-- the lower part is step 3 show user data -->
-                 <div id="ustext">
-                    <button onclick="sub()" class="secondary-text add-pt d-none" id="usersave"> Add Patien</button>
-                 </div>
+                </div>
                 <!-- the lower part is step 3 show user data -->
-               
+                <div id="ustext">
+                    <button onclick="sub()" class="secondary-text add-pt d-none" id="usersave"> Add Patien</button>
+                </div>
+                <!-- the lower part is step 3 show user data -->
+
                 <button onclick="step2()" style="display:none;" id="btn-final" class="btn-final primary-text">Save and
                     Countinue</button>
             </div>
@@ -341,13 +343,15 @@
                     <div class="border shadow p-4 bg-body rounded">
                         <div class="mx-3">
                             <h2 class="fw-bold mb-3">Promo Code</h2>
-                            <div
-                                class="coupon-btn border px-3 py-3 rounded d-flex justify-content-between align-items-center">
-                                <h3 class="secondary-text fw-bold text-danger m-0">
-                                    Apply Coupon
-                                </h3>
-                                <p class="secondary-text text-danger fw-bold m-0">></p>
-                            </div>
+                            <button type="button" class="w-100" id="add-coupon-popup">
+                                <div
+                                    class="coupon-btn border px-3 py-3 rounded d-flex justify-content-between align-items-center">
+                                    <h3 class="secondary-text fw-bold text-danger m-0">
+                                        Apply Coupon
+                                    </h3>
+                                    <p class="secondary-text text-danger fw-bold m-0">></p>
+                                </div>
+                            </button>
                         </div>
                     </div>
 
@@ -422,20 +426,17 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
     </div>
 
-     <!-- popup for add plan -->
+    <!-- popup for add plan -->
 
-     <div class="hide-add-plan-popup">
+    <div class="hide-add-plan-popup">
         <div class="h-100 border px-3 py-3 shadow p-3 bg-body rounded overflow-y-scroll">
             <button type="button" class="btn bg-danger rounded-circle" id="close-popup">
                 <span class="text-white font-weight-bold">X</span>
             </button>
-            <br>
             <div class="container py-3 ">
                 <div>
                     <h2 class="primary-text fw-bold"> Add Med Gold Card</h2>
@@ -591,12 +592,11 @@
                         <p class="secondary-text ms-3">XYZ Certified</p>
                     </div>
 
-                    
+
                 </div>
                 <div class="mx-2 my-3 d-flex w-100">
                     <div class="picture">
-                        <img src="img/Frame 32322.png"
-                            alt="" />
+                        <img src="img/Frame 32322.png" alt="" />
                     </div>
                     <div class="d-flex ms-3">
                         <div class=" ">
@@ -608,7 +608,7 @@
 
                 <div class="d-grid mt-5 gap-2 col-6 w-100 mx-auto">
                     <button class=" btn btn-outline-danger" type="button">Add Plan</button>
-                    
+
                 </div>
                 <div class="d-grid mt-2 gap-2 col-6 w-100 mx-auto">
                     <button class=" btn btn-outline-danger primary-text" type="button">Skip</button>
@@ -617,44 +617,224 @@
         </div>
     </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $(".goldCardPlan").on("click", function () {
-                $(".couponAmount").addClass("d-none")
-                // $(".goldCardPlan").removeClass("activeplan")
-                $(".goldCardPlan").removeClass("activeplan")
 
 
-                $(this).addClass("activeplan")
-                $(this).find(".couponAmount").removeClass("d-none")
-            })
+    <!-- Apply coupon code popup -->
 
-            $("#add-plan-popup").on("click", function () {
-                $(".hide-add-plan-popup").css({
-                    right: '0%'
+    <div class="hide-apply-coupon-popup mt-5 pb-5">
+        <div class="h-100 border px-3 py-3 shadow p-3 bg-body rounded overflow-y-scroll">
+            <div class="d-flex justify-content-between px-3">
+                <p class="primary-text">Apply Promo Code</p>
+                <button type="button" class="" id="close-coupon-popup">
+                    <!-- <span class="text-white font-weight-bold">X</span> -->
+                    <img src="img/Frame 581.png" alt="">
+                </button>
+            </div>
+
+            <div class="w-100 mt-5">
+                <div class="coupon-btn border px-3 py-3 rounded d-flex justify-content-between align-items-center" aria-placeholder=" aria-placeholder">
+                    <input width="80%" height="100px" class="border-0 h-auto w-80" type="text" placeholder="Enter coupon code">
+                    <button type="button" class="secondary-text fw-bold text-danger m-0">
+                        Apply
+                    </button>
+                </div>
+                </div>
+
+
+                <div class="container py-3 px-3 mt-3 ">
+                    <div class="py-2 d-flex px-1 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class="d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $(".goldCardPlan").on("click", function () {
+                    $(".couponAmount").addClass("d-none")
+                    // $(".goldCardPlan").removeClass("activeplan")
+                    $(".goldCardPlan").removeClass("activeplan")
+
+
+                    $(this).addClass("activeplan")
+                    $(this).find(".couponAmount").removeClass("d-none")
                 })
-            })
 
-            $("#close-popup").on("click", function () {
-                $(".hide-add-plan-popup").css({
-                    right: '-100%'
+                $("#add-plan-popup").on("click", function () {
+                    $(".hide-add-plan-popup").css({
+                        right: '0%'
+                    })
                 })
-            })
 
-        })
-    </script>
+                $("#close-popup").on("click", function () {
+                    $(".hide-add-plan-popup").css({
+                        right: '-100%'
+                    })
+                })
+
+
+                // for apply coupon button
+
+
+                $("#add-coupon-popup").on("click", function () {
+                    $(".hide-apply-coupon-popup").css({
+                        right: '1%'
+                    })
+                })
+
+                $("#close-coupon-popup").on("click", function () {
+                    $(".hide-apply-coupon-popup").css({
+                        right: '-100%'
+                    })
+                })
+
+
+            })
+        </script>
 
 </body>
 

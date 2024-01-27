@@ -42,7 +42,6 @@ html {
 }
 body {
     font-family: var(--ff-primary) !important;
-    position: relative;
 }
 body::-webkit-scrollbar {
     display: none;

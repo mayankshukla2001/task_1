@@ -212,6 +212,20 @@ h2.primary-text {
     transition: all 1s;
 }
 
+.hide-apply-coupon-popup{
+    width: 30%;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all 1s;
+}
+
+.radio-btn-apply-cpn{
+    float: inline-end !important;
+    font-size: small !important;
+}
+
 @media all and (max-width: 334px) {
     .card-plan-popup .modal-content {
         width: 75% !important;
