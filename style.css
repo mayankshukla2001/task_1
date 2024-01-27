@@ -168,9 +168,6 @@ h2.fw-bold.primary-text {
 .modal-content .modal-header{
     display: block !important;
 }
-h2.primary-text {
-    /* font-weight: 600 !important; */
-}
 .discount-sec-on-booking{
     color: var(--secondary-clr) !important;
 }
