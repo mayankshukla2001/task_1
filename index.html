@@ -5,15 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="/ind.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
-    <div class="container">
+    <div class="container position-relative overflow-hidden">
         <div class="row">
             <div class="col-7 first-cont">
                 <div class="time-line d-flex">
@@ -431,353 +431,350 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    </div>
+        <!-- popup for add plan -->
 
-    <!-- popup for add plan -->
-
-    <div class="hide-add-plan-popup">
-        <div class="h-100 border px-3 py-3 shadow p-3 bg-body rounded overflow-y-scroll">
-            <button type="button" class="btn bg-danger rounded-circle" id="close-popup">
-                <span class="text-white font-weight-bold">X</span>
-            </button>
-            <div class="container py-3 ">
-                <div>
-                    <h2 class="primary-text fw-bold"> Add Med Gold Card</h2>
-                </div>
-                <div class=" discount-sec  ">
-                    <div class="row d-flex py-2 align-items-center">
-                        <div class="col-7">
-                            <span class="discount-sec-on-booking secondary-text secondary-clr">On Medicines &
-                                your Tests
-                                Bookings</span>
-                        </div>
-                        <div class="col-5">
-                            <span class=" discount-sec-percentage small-text text-warning">Get Upto 40%
-                                Discount</span>
+        <div class="hide-add-plan-popup">
+            <div class="h-100 border px-3 py-3 shadow p-3 bg-body rounded overflow-y-scroll">
+                <button type="button" class="btn bg-danger rounded-circle" id="close-popup">
+                    <span class="text-white font-weight-bold">X</span>
+                </button>
+                <div class="container py-3 ">
+                    <div>
+                        <h2 class="primary-text fw-bold"> Add Med Gold Card</h2>
+                    </div>
+                    <div class=" discount-sec  ">
+                        <div class="row d-flex py-2 align-items-center">
+                            <div class="col-7">
+                                <span class="discount-sec-on-booking secondary-text secondary-clr">On Medicines &
+                                    your Tests
+                                    Bookings</span>
+                            </div>
+                            <div class="col-5">
+                                <span class=" discount-sec-percentage small-text text-warning">Get Upto 40%
+                                    Discount</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="payment-handle">
-                    <div class=" py-1 px-3">
-                        <div class=" plan-sec primary-text">Choose Plans</div>
-                        <div class="select-plan px-1">
-                            <div class="month-6-plan mb-3 w-100 px-3 py-3 goldCardPlan ">
-                                <div class="d-flex w-100">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
+                    <div class="payment-handle">
+                        <div class=" py-1 px-3">
+                            <div class=" plan-sec primary-text">Choose Plans</div>
+                            <div class="select-plan px-1">
+                                <div class="month-6-plan mb-3 w-100 px-3 py-3 goldCardPlan ">
+                                    <div class="d-flex w-100">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
 
-                                        <span class="secondary-text"> 6 Months Plan</span>
+                                            <span class="secondary-text"> 6 Months Plan</span>
 
-                                        <span class="ms-auto plan-amount secondary-text">399</span>
+                                            <span class="ms-auto plan-amount secondary-text">399</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="d-none couponAmount">
-                                    <div class="coupon d-flex">
-                                        <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
-                                            Coupon
-                                            Applied</span>
-                                        <span class="ms-auto plan-amount secondary-text">2399</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between border-top w-100 ">
-                                        <p class="secondary-text">Total Amount</p>
-                                        <p class="secondary-text">2500</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="month-1-plan mb-3 w-100 px-3  py-3 goldCardPlan">
-                                <div class="d-flex w-100 align-items-center ">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
-
-                                        <span class="secondary-text"> 1 Year Plan</span>
-
-                                        <span class="ms-auto plan-amount secondary-text">2999</span>
+                                    <div class="d-none couponAmount">
+                                        <div class="coupon d-flex">
+                                            <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
+                                                Coupon
+                                                Applied</span>
+                                            <span class="ms-auto plan-amount secondary-text">2399</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between border-top w-100 ">
+                                            <p class="secondary-text">Total Amount</p>
+                                            <p class="secondary-text">2500</p>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="d-none couponAmount">
-                                    <div class="coupon d-flex">
-                                        <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
-                                            Coupon
-                                            Applied</span>
-                                        <span class="ms-auto plan-amount secondary-text">2399</span>
+                                <div class="month-1-plan mb-3 w-100 px-3  py-3 goldCardPlan">
+                                    <div class="d-flex w-100 align-items-center ">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
+
+                                            <span class="secondary-text"> 1 Year Plan</span>
+
+                                            <span class="ms-auto plan-amount secondary-text">2999</span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-between border-top w-100 ">
-                                        <p class="secondary-text">Total Amount</p>
-                                        <p class="secondary-text">2500</p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="month-1-plan mb-3 w-100 px-3  py-3 goldCardPlan">
-                                <div class="d-flex w-100 align-items-center ">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
-
-                                        <span class="secondary-text"> 2 Year Plan</span>
-
-                                        <span class="ms-auto plan-amount secondary-text">2999</span>
-                                    </div>
-                                </div>
-
-                                <div class="d-none couponAmount">
-                                    <div class="coupon d-flex">
-                                        <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
-                                            Coupon
-                                            Applied</span>
-                                        <span class="ms-auto plan-amount secondary-text">2399</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between border-top w-100 ">
-                                        <p class="secondary-text">Total Amount</p>
-                                        <p class="secondary-text">2500</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="month-1-plan mb-3 w-100 px-3  py-3 goldCardPlan">
-                                <div class="d-flex w-100 align-items-center ">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1">
-                                    <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
-
-                                        <span class="secondary-text"> 3 Year Plan</span>
-
-                                        <span class="ms-auto plan-amount secondary-text">2999</span>
+                                    <div class="d-none couponAmount">
+                                        <div class="coupon d-flex">
+                                            <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
+                                                Coupon
+                                                Applied</span>
+                                            <span class="ms-auto plan-amount secondary-text">2399</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between border-top w-100 ">
+                                            <p class="secondary-text">Total Amount</p>
+                                            <p class="secondary-text">2500</p>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="d-none couponAmount">
-                                    <div class="coupon d-flex">
-                                        <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
-                                            Coupon
-                                            Applied</span>
-                                        <span class="ms-auto plan-amount secondary-text">2399</span>
+                                <div class="month-1-plan mb-3 w-100 px-3  py-3 goldCardPlan">
+                                    <div class="d-flex w-100 align-items-center ">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
+
+                                            <span class="secondary-text"> 2 Year Plan</span>
+
+                                            <span class="ms-auto plan-amount secondary-text">2999</span>
+                                        </div>
                                     </div>
-                                    <div class="d-flex justify-content-between border-top w-100 ">
-                                        <p class="secondary-text">Total Amount</p>
-                                        <p class="secondary-text">2500</p>
+
+                                    <div class="d-none couponAmount">
+                                        <div class="coupon d-flex">
+                                            <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
+                                                Coupon
+                                                Applied</span>
+                                            <span class="ms-auto plan-amount secondary-text">2399</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between border-top w-100 ">
+                                            <p class="secondary-text">Total Amount</p>
+                                            <p class="secondary-text">2500</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="month-1-plan mb-3 w-100 px-3  py-3 goldCardPlan">
+                                    <div class="d-flex w-100 align-items-center ">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <div class="form-check-label w-100 ps-3 d-flex justify-content-between">
+
+                                            <span class="secondary-text"> 3 Year Plan</span>
+
+                                            <span class="ms-auto plan-amount secondary-text">2999</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-none couponAmount">
+                                        <div class="coupon d-flex">
+                                            <span class="secondary-text"><img src="img/Discount.png" alt=""></i>
+                                                Coupon
+                                                Applied</span>
+                                            <span class="ms-auto plan-amount secondary-text">2399</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between border-top w-100 ">
+                                            <p class="secondary-text">Total Amount</p>
+                                            <p class="secondary-text">2500</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="">
-                    <div class="secondary-text fw-bold pt-3">
-                        <p>Why Choose Gold Plan?</p>
-                    </div>
-                    <div class="d-flex mb-3 ">
-                        <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
-                        <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
-                    </div>
+                    <div class="">
+                        <div class="secondary-text fw-bold pt-3">
+                            <p>Why Choose Gold Plan?</p>
+                        </div>
+                        <div class="d-flex mb-3 ">
+                            <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
+                            <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
 
-                    <div class="d-flex mb-3">
-                        <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
-                        <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
-                    </div>
+                        <div class="d-flex mb-3">
+                            <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
+                            <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
 
-                    <div class="d-flex mb-3">
-                        <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
-                        <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
-                    </div>
+                        <div class="d-flex mb-3">
+                            <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
+                            <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
 
-                    <div class="d-flex mb-3">
-                        <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
-                        <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <img class="plan-intro-img" src="img/Varients.png" alt="">
-                        <p class="secondary-text ms-3">XYZ Certified</p>
-                    </div>
+                        <div class="d-flex mb-3">
+                            <img class="plan-intro-img" src="img/Frame 32322.png" alt="">
+                            <p class="secondary-text ms-3">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img class="plan-intro-img" src="img/Varients.png" alt="">
+                            <p class="secondary-text ms-3">XYZ Certified</p>
+                        </div>
 
 
-                </div>
-                <div class="mx-2 my-3 d-flex w-100">
-                    <div class="picture">
-                        <img src="img/Frame 32322.png" alt="" />
                     </div>
-                    <div class="d-flex ms-3">
-                        <div class=" ">
-                            <p class="secondary-text m-0">Test Conducted by</p>
-                            <p class="">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
+                    <div class="mx-2 my-3 d-flex w-100">
+                        <div class="picture">
+                            <img src="img/Frame 32322.png" alt="" />
+                        </div>
+                        <div class="d-flex ms-3">
+                            <div class=" ">
+                                <p class="secondary-text m-0">Test Conducted by</p>
+                                <p class="">6 Months Plan Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="d-grid mt-5 gap-2 col-6 w-100 mx-auto">
-                    <button class=" btn btn-outline-danger" type="button">Add Plan</button>
+                    <div class="d-grid mt-5 gap-2 col-6 w-100 mx-auto">
+                        <button class=" btn btn-outline-danger" type="button">Add Plan</button>
 
-                </div>
-                <div class="d-grid mt-2 gap-2 col-6 w-100 mx-auto">
-                    <button class=" btn btn-outline-danger primary-text" type="button">Skip</button>
+                    </div>
+                    <div class="d-grid mt-2 gap-2 col-6 w-100 mx-auto">
+                        <button class=" btn btn-outline-danger primary-text" type="button">Skip</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
+        <!-- Apply coupon code popup -->
 
-    <!-- Apply coupon code popup -->
-
-    <div class="hide-apply-coupon-popup mt-5 pb-5">
-        <div class="h-100 border px-3 py-3 shadow p-3 bg-body rounded overflow-y-scroll">
-            <div class="d-flex justify-content-between px-3">
-                <p class="primary-text">Apply Promo Code</p>
-                <button type="button" class="" id="close-coupon-popup">
-                    <!-- <span class="text-white font-weight-bold">X</span> -->
-                    <img src="img/Frame 581.png" alt="">
-                </button>
-            </div>
-
-            <div class="w-100 mt-5">
-                <div class="coupon-btn border px-3 py-3 rounded d-flex justify-content-between align-items-center"
-                    aria-placeholder=" aria-placeholder">
-                    <input class=" shadow-none form-control   fw-bold secondary-text" type="text"
-                        placeholder="Enter coupon code">
-                    <button type="button" class="secondary-text fw-bold text-danger m-0" id="apply-cpn">
-                        Apply
+        <div class="hide-apply-coupon-popup mt-5 pb-5">
+            <div class="h-100 border px-3 py-3 shadow p-3 bg-body rounded overflow-y-scroll">
+                <div class="d-flex justify-content-between px-3">
+                    <p class="primary-text">Apply Promo Code</p>
+                    <button type="button" class="" id="close-coupon-popup">
+                        <!-- <span class="text-white font-weight-bold">X</span> -->
+                        <img src="img/Frame 581.png" alt="">
                     </button>
                 </div>
-            </div>
 
-
-            <div class="container py-3 px-3 mt-3 ">
-                <div class="py-2 d-flex px-1 rounded" style="border: 1px dashed var(--border-light-clr)">
-                    <div class="mt-2 form-check radio-btn-apply-cpn">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    </div>
-
-                    <div class=" d-flex w-100 mt-2">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="name_amount">
-                                <span class="secondary-text">MEDCAB LAB10</span>
-                                <span class="small-text">You save 10%</span>
-                                <p class="text-secondary small-text">
-                                    Flat 10% off on all tests and packages -Minimum Booking
-                                    value -Rs350
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
-                    <div class="mt-2 form-check radio-btn-apply-cpn">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    </div>
-
-                    <div class="d-flex w-100 mt-2">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="name_amount">
-                                <span class="secondary-text">MEDCAB LAB10</span>
-                                <span class="small-text">You save 10%</span>
-                                <p class="text-secondary small-text">
-                                    Flat 10% off on all tests and packages -Minimum Booking
-                                    value -Rs350
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
-                    <div class="mt-2 form-check radio-btn-apply-cpn">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    </div>
-
-                    <div class=" d-flex w-100 mt-2">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="name_amount">
-                                <span class="secondary-text">MEDCAB LAB10</span>
-                                <span class="small-text">You save 10%</span>
-                                <p class="text-secondary small-text">
-                                    Flat 10% off on all tests and packages -Minimum Booking
-                                    value -Rs350
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
-                    <div class="mt-2 form-check radio-btn-apply-cpn">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    </div>
-
-                    <div class=" d-flex w-100 mt-2">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="name_amount">
-                                <span class="secondary-text">MEDCAB LAB10</span>
-                                <span class="small-text">You save 10%</span>
-                                <p class="text-secondary small-text">
-                                    Flat 10% off on all tests and packages -Minimum Booking
-                                    value -Rs350
-                                </p>
-                            </div>
-                        </div>
+                <div class="w-100 mt-5">
+                    <div class="coupon-btn border px-3 py-3 rounded d-flex justify-content-between align-items-center"
+                        aria-placeholder=" aria-placeholder">
+                        <input class=" shadow-none form-control   fw-bold secondary-text" type="text"
+                            placeholder="Enter coupon code">
+                        <button type="button" class="secondary-text fw-bold text-danger m-0" id="apply-cpn">
+                            Apply
+                        </button>
                     </div>
                 </div>
 
 
-                <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
-                    <div class="mt-2 form-check radio-btn-apply-cpn">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    </div>
+                <div class="container py-3 px-3 mt-3 ">
+                    <div class="py-2 d-flex px-1 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
 
-                    <div class=" d-flex w-100 mt-2">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="name_amount">
-                                <span class="secondary-text">MEDCAB LAB10</span>
-                                <span class="small-text">You save 10%</span>
-                                <p class="text-secondary small-text">
-                                    Flat 10% off on all tests and packages -Minimum Booking
-                                    value -Rs350
-                                </p>
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
-                    <div class="mt-2 form-check radio-btn-apply-cpn">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    </div>
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
 
-                    <div class=" d-flex w-100 mt-2">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="name_amount">
-                                <span class="secondary-text">MEDCAB LAB10</span>
-                                <span class="small-text">You save 10%</span>
-                                <p class="text-secondary small-text">
-                                    Flat 10% off on all tests and packages -Minimum Booking
-                                    value -Rs350
-                                </p>
+                        <div class="d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
-                    <div class="mt-2 form-check radio-btn-apply-cpn">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class=" d-flex w-100 mt-2">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="name_amount">
-                                <span class="secondary-text">MEDCAB LAB10</span>
-                                <span class="small-text">You save 10%</span>
-                                <p class="text-secondary small-text">
-                                    Flat 10% off on all tests and packages -Minimum Booking
-                                    value -Rs350
-                                </p>
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="  py-2 d-flex px-1 mt-2 rounded" style="border: 1px dashed var(--border-light-clr)">
+                        <div class="mt-2 form-check radio-btn-apply-cpn">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        </div>
+
+                        <div class=" d-flex w-100 mt-2">
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="name_amount">
+                                    <span class="secondary-text">MEDCAB LAB10</span>
+                                    <span class="small-text">You save 10%</span>
+                                    <p class="text-secondary small-text">
+                                        Flat 10% off on all tests and packages -Minimum Booking
+                                        value -Rs350
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -785,6 +782,17 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- after coupon applied button -->
 
